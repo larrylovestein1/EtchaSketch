@@ -1,5 +1,5 @@
 const container = document.getElementById("container");
-
+const reset = document.getElementById("reset");
 
 
 
@@ -9,7 +9,7 @@ function makeRows(rows,cols) {
   container.style.setProperty('--grid-cols', cols);
   for (i = 0; i < (rows * cols); i++) {
     let cell = document.createElement("div");
-    cell.addEventListener('mousemove',changeColors);
+    cell.addEventListener('mousedown',changeColors); 
     function changeColors() {
       cell.style.backgroundColor = 'blue';
     }
@@ -19,6 +19,9 @@ function makeRows(rows,cols) {
 };
 
 makeRows(16, 16);
+
+ console.log("hello world");
+
 
 
 

@@ -2,12 +2,16 @@
     --grid-cols: 1;
     --grid-rows: 1;
 }
-
-.wrapper {
-    display: grid;
-    justify-content: center;
+#body {
+    background-color: #88888888;
 }
 
+#reset {
+    border-radius: 10px;
+    min-height: 8px;
+    min-width: 120px;
+    padding: 8px;
+}
 
 
 #container {
@@ -15,6 +19,11 @@
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     width: 8px;
+}
+
+#gridstyle {
+    display: flex;
+    justify-content: center;
 }
 
 .grid-item {
