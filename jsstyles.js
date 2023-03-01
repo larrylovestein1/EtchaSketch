@@ -1,6 +1,7 @@
 const container = document.getElementById("container");
 const reset = document.getElementById("reset");
 const cell = document.getElementsByName("grid-item");
+const sizeButton = document.getElementById("prompt");
 
 
 
@@ -27,7 +28,19 @@ function makeRows(rows,cols) {
   };
 };
 
-makeRows(16, 16);
+makeRows(16,16); //default grid size 
+
+
+
+sizeButton.addEventListener('click' , newGrid);
+// gather user input to use inside of the function for a new gridsize
+function newGrid() {
+  let userInput = prompt("Choose Grid Size");
+  console.log(userInput);
+  makeRows(userInput,userInput);
+};
+
+
 
 
 
