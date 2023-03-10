@@ -29,7 +29,7 @@
 
 .grid-item {
     padding: 1em;
-    border: 1px solid black;
+    border: 1px grey;
     text-align: center;
     display: grid;
     

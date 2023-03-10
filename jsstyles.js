@@ -28,7 +28,7 @@ function makeRows(rows,cols) {
   };
 };
 
-makeRows(16,16); //default grid size 
+makeRows(); //default grid size 
 
 
 
@@ -45,7 +45,6 @@ function newGrid() {
 
 
 
-  
 
 
 
